@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>CSPD_database</title>
+
+    <!-- This is a 3rd-party stylesheet to make available the font family to be used for this page ("Roboto"). -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
+
+    <!-- This 3rd-party stylesheet incorporates SVG icons from Font Awesome: http://fontawesome.com/ -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css" media="screen">
+
+    <script src="index.js" charset="utf-8" defer></script>
+
+  </head>
+
+  <body>
+
+    <header>
+      <!-- The <i> tag below includes the bullhorn icon from Font Awesome -->
+      <a href="#"><h1 class="site-title"></i>CSPD_database</h1></a>
+
+      <nav class="navbar">
+        <ul class="navlist">
+          <li class="navitem navlink active"><a href="index.html">Persons</a></li>
+          <li class="navitem navlink"><a href="blasters/blasters.html">Blasters</a></li>
+          <li class="navitem navlink"><a href="land/land.html">LandCruisers</a></li>
+          <li class="navitem navlink"><a href="crimes/crimes.html">Crimes</a></li>
+          <li class="navitem navbar-search">
+            <input type="text" id="navbar-search-input" placeholder="Search...">
+            <button type="button" id="navbar-search-button"><i class="fas fa-search"></i></button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="date_table">
+
+      <table style="width:100%">
+        <thead>
+        <tr>
+          <th>Personal_ID</th>
+          <th>Homeworld</th>
+          <th>Blaster_ownership</th>
+          <th>LandCruiser_ownership</th>
+          <th>Relationship</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>95271234</td>
+          <td>earth</td>
+          <td>AR-15</td>
+          <td>SUV</td>
+          <td>public smoke</td>
+          <td><button class="deleteBt">DELETE</button></td>
+        </tr>
+        <tr>
+          <td>11223344</td>
+          <td>mars</td>
+          <td>AK-47</td>
+          <td>usv</td>
+          <td>smoke public</td>
+          <td><button class="deleteBt">DELETE</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+      <ul class = up_input>
+      <input type="text" id="id-input" placeholder="Personal_ID">
+      <input type="text" id="home-input" placeholder="Homeworld">
+      <input type="text" id="b-input" placeholder="Blaster_ownership">
+      <input type="text" id="l-input" placeholder="LandCruiser_ownership">
+      <input type="text" id="r-input" placeholder="Relationship">
+      </ul>
+      <ul class = change_button>
+      <button type="button" id="add-button">UPDATE</button>
+      </ul>
+      </main>
+
+      </div>
+      
+    </div>
+
+  </body>
+
+</html>
